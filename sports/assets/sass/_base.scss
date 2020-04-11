@@ -1,0 +1,46 @@
+/* BASE */
+
+.container {
+    max-width: 1320px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main {
+	transform: translateY(-70px);
+    transition: all 1s ease-out;
+}
+
+.main__inner {
+	box-shadow: 0 0 62px rgba(0, 0, 0, 0.3);
+}
+
+/* /BASE */
+
+//BTN
+
+.btn {
+	font-family: $montserrat;
+	font-size: 17px;
+	padding: 17px 25px;
+	display: inline-block;
+	border-radius: 30px;
+	border: 0;
+}
+
+.btn-blue {
+	background: #3954d9;
+	color: #fff;
+}
+
+.btn-light {
+	background: #65cbff;
+	color: #121212;
+}
+
+//PRICE
+
+.price-now {
+	font-family: $montserrat;
+	color: #3954d9;
+}

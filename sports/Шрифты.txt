@@ -1,0 +1,27 @@
+[Poppins] [Black]
+[Poppins] [SemiB...
+[Poppins] [BoldIt...
+[Poppins] [Regular]
+[Poppins] [Bold]
+[Montserrat] [SemiB...
+[Montserrat] [Light]
+[Montserrat] [Medium]
+[Montserrat] [Bold]
+[Montserrat] [Regular]
+[BebasNeueBold] regular
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,700i,900&display=swap');
+
+font-family: 'Poppins', sans-serif;
+
+---------------
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+font-family: 'Montserrat', sans-serif;
+
+-----------------
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+font-family: 'Bebas Neue', cursive;
