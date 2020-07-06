@@ -28,7 +28,8 @@
 }
 
 .product__img {
-	height: 100%;
+    max-height: 73%;
+    flex-grow: 1;
 }
 
 .product__img img {

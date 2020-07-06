@@ -23,7 +23,7 @@
 	display: flex;
 	align-items: center;
 	border-right: 1px solid rgba(255, 255, 255, 0.22);
-
+    width: 186px;
 
 	a {
 		font-size: 33px;
@@ -53,10 +53,14 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding: 0 15px 0 15px;
+	padding: 0 15px;
 	color: #fff;
 	font-weight: 600;
 	text-transform: uppercase;
+}
+
+.header__menu.active .header__item a {
+    padding: 10px 15px;
 }
 
 .header__social, .header__cart, .header__search {
@@ -67,6 +71,7 @@
 
 .header__social {
     border-left: 1px solid rgba(255, 255, 255, 0.22);
+    width: 238px;
 }
 
 .header__social svg {
@@ -77,6 +82,71 @@
     width: 74px;
     height: 74px;
     border-left: 1px solid rgba(255, 255, 255, 0.22);
+    cursor: pointer;
+}
+
+.header__cart, .header__social, .header__search-form, .header__logo, .header__burger--wrap {
+    transition: .5s;
+    overflow: hidden;
+}
+
+.active-search {
+    width: 0 !important;
+    border: 0 !important;
+}
+
+.header__search-form {
+    width: 238px;
+    overflow: hidden;
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.header__search-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.header__search-form form input {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(245, 245, 245);
+    width: 213px;
+    margin: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    padding: 5px;
+    background: transparent;
+    outline: 0;
+    padding-right: 30px;
+}
+
+.header__search-form form input::placeholder {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(245, 245, 245);
+}
+
+.header__search-form form button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: 0;
+}
+
+.header__search-form form button svg {
+    width: 30px;
+    height: 30px;
 }
 
 //********************
