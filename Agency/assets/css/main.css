@@ -138,12 +138,6 @@ img {
   font-weight: bold;
   transform: rotateX(0deg);
   padding-top: 0;
-  transition: all 0.2s ease;
-}
-.header__logo h1:hover {
-  transform: rotateZ(-5deg);
-  font-size: 40px;
-  padding-top: 5px;
 }
 
 .header__inner {
@@ -456,8 +450,6 @@ img {
 
 .who-we-are__layer img {
   width: 100%;
-  margin-top: 32%;
-  transform: translateY(-50%);
 }
 
 @media (max-width: 1270px) {
@@ -767,6 +759,10 @@ img {
   .images-skew__number {
     display: none;
   }
+
+  .how-we-works::after {
+    display: none;
+  }
 }
 @media (max-width: 675px) {
   .images-skew__title > b {
@@ -1006,13 +1002,6 @@ img {
     right: -16vw;
   }
 
-  .slick-list {
-    padding-top: 140px !important;
-    padding-bottom: 110px !important;
-    padding-left: 17% !important;
-    padding-right: 17% !important;
-  }
-
   .team::after {
     border: 80px solid transparent;
     border-left: 60px solid #171717;
@@ -1096,6 +1085,8 @@ img {
 .testimonial__title {
   margin-bottom: 100px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .testimonial__box-content {
@@ -1190,11 +1181,11 @@ img {
   display: flex;
 }
 
-.team__item {
+.team__item-margin {
   margin-left: 5%;
 }
 
-.slick-list {
+.testimonial .slick-list {
   padding-top: 45px;
   padding-bottom: 45px;
 }
@@ -1318,10 +1309,6 @@ img {
 
 .st0 {
   fill: #fff !important;
-}
-
-.footer__img svg {
-  fill: #fff;
 }
 
 .footer__content {

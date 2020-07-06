@@ -19,13 +19,7 @@
         font-weight: bold;
 		transform: rotateX(0deg);
 		padding-top: 0;
-		transition: $trans;
     }
-	h1:hover {
-		transform: rotateZ(-5deg);
-		font-size: 40px;
-		padding-top: 5px;
-	}
 }
 .header__inner {
     display: flex;

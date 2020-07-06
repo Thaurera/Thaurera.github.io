@@ -35,6 +35,8 @@
 .testimonial__title {
     margin-bottom: 100px;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .testimonial__box-content {
@@ -131,11 +133,11 @@
 	display: flex;
 }
 
-.team__item {
+.team__item-margin {
 	margin-left: 5%;
 }
 
-.slick-list {
+.testimonial .slick-list {
 	padding-top: 45px;
 	padding-bottom: 45px;
 }

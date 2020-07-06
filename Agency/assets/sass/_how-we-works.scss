@@ -183,6 +183,10 @@
 	.images-skew__number {
 		display: none;
 	}
+    
+    .how-we-works::after {
+        display: none;
+    }
 }
 
 @media (max-width: 675px) {
