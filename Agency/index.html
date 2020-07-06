@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -80,9 +80,14 @@
                 </div>
                 
                 <div class="who-we-are__image">
+                   
                     <img src="assets/img/who-we-are/laptope.png" alt="" class="who-we-are__laptop">
-                    <div class="who-we-are__layer">
+                    
+                    <div class="who-we-are__layer" id="laptope__slider">
+                       
                         <img src="assets/img/who-we-are/layer-1.jpg" alt="">
+                        <img src="assets/img/who-we-are/layer-1.jpg" alt="">
+                        
                     </div>
                 </div>
                 
@@ -302,7 +307,7 @@
                    
                    <div class="team__prev cascade-slider_arrow" data-action="prev"></div>
                    
-                    <div class="cascade-slider_item team__wrapper-item">
+                    <a href="#" class="cascade-slider_item team__wrapper-item">
                         <div class="team__item">
                             <div class="team__img">
                                 <img src="assets/img/team/team-1.jpg" alt="">
@@ -310,9 +315,9 @@
                             <div class="team__name"><b>John Doe</b></div>
                             <div class="team__specialty"><b>Designer</b></div>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="cascade-slider_item team__wrapper-item">
+                    <a href="#" class="cascade-slider_item team__wrapper-item">
                         <div class="team__item">
                             <div class="team__img">
                                 <img src="assets/img/team/team-2.jpg" alt="">
@@ -320,9 +325,9 @@
                             <div class="team__name"><b>Steave</b></div>
                             <div class="team__specialty"><b>Designer</b></div>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="cascade-slider_item team__wrapper-item">
+                    <a href="#" class="cascade-slider_item team__wrapper-item">
                         <div class="team__item">
                             <div class="team__img">
                                 <img src="assets/img/team/team-3.jpg" alt="">
@@ -330,9 +335,9 @@
                             <div class="team__name"><b>Jo</b></div>
                             <div class="team__specialty"><b>Designer</b></div>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="cascade-slider_item team__wrapper-item">
+                    <a href="#" class="cascade-slider_item team__wrapper-item">
                         <div class="team__item">
                             <div class="team__img">
                                 <img src="assets/img/team/team-4.jpg" alt="">
@@ -340,7 +345,7 @@
                             <div class="team__name"><b>Jasmin</b></div>
                             <div class="team__specialty"><b>Designer</b></div>
                         </div>
-                    </div>
+                    </a>
                     
                     <div class="team__next cascade-slider_arrow" data-action="next"></div>
                     
@@ -359,7 +364,7 @@
                 <div id="testimonial-slider">
                    	<div class="container">
                    	<div class="testimonial__box-inner">
-						<div class="team__item">
+						<div class="team__item team__item-margin">
 							<div class="team__img">
 								<img src="assets/img/team/team-1.jpg" alt="">
 							</div>
@@ -375,7 +380,7 @@
 					</div>
                <div class="container">
                    	<div class="testimonial__box-inner">
-						<div class="team__item">
+						<div class="team__item team__item-margin">
 							<div class="team__img">
 								<img src="assets/img/team/team-2.jpg" alt="">
 							</div>
@@ -391,7 +396,7 @@
 					</div>
                <div class="container">
                    	<div class="testimonial__box-inner">
-						<div class="team__item">
+						<div class="team__item team__item-margin">
 							<div class="team__img">
 								<img src="assets/img/team/team-3.jpg" alt="">
 							</div>
@@ -477,10 +482,10 @@
 							</svg>
                         </div>
                         <div class="footer__content">
-                            <span class="footer__block-title"><b>Email</b></span>
+                            <span class="footer__block-title"><b>Phone</b></span>
                             <div>
-                                <a href="#" class="footer__link">free@psdfreebies.com</a>
-                                <a href="#" class="footer__link">free@psdfreebies.com</a>
+                                <a href="#" class="footer__link">+123 456 7890</a>
+                                <a href="#" class="footer__link">+123 456 7890</a>
                             </div>
                         </div>
                     </div>
@@ -507,10 +512,10 @@
 							</svg>
                         </div>
                         <div class="footer__content">
-                            <span class="footer__block-title"><b>Email</b></span>
+                            <span class="footer__block-title"><b>Office</b></span>
                             <div>
-                                <a href="#" class="footer__link">free@psdfreebies.com</a>
-                                <a href="#" class="footer__link">free@psdfreebies.com</a>
+                                <a href="#" class="footer__link">123, Main Road, New City,</a>
+                                <a href="#" class="footer__link">My Country 123456</a>
                             </div>
                         </div>
                     </div>
@@ -519,7 +524,7 @@
                 
                 <div class="social social-margin">
                 	<a href="#">
-                		<svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+                		<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
                 	</a>
                 	<a href="#">
                 		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -538,7 +543,7 @@
 					</svg>
 					</a>
 					<a href="#">
-						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
 				<g>
 					<g>
 						<path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
@@ -557,7 +562,7 @@
 				</svg>
                		</a>
                		<a href="#">
-               			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90.677px" height="90.677px" viewBox="0 0 90.677 90.677" style="enable-background:new 0 0 90.677 90.677;" xml:space="preserve">
+               			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90.677px" height="90.677px" viewBox="0 0 90.677 90.677" style="enable-background:new 0 0 90.677 90.677;" xml:space="preserve">
 						<g>
 							<g>
 								<path d="M82.287,45.907c-0.937-4.071-4.267-7.074-8.275-7.521c-9.489-1.06-19.098-1.065-28.66-1.06
@@ -592,10 +597,10 @@
 						</svg>
                		</a>
                		<a href="#">
-               			<svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
+               			<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
                		</a>
                		<a href="#">
-               			<svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m7.186 4.5h2.405v2.391h-2.405z"/><path d="m24 8.078h-6.239v8.173h3.834v1.336h-3.834v1.913h6.239zm-2.405 6.251h-1.444v-4.327h1.444z"/><path d="m7.186 8.077h2.405v8.175h-2.405z"/><path d="m6.22 4.5h-2.391v3.577h-3.829v8.175h6.22zm-2.39 9.829h-1.444v-4.327h1.444z"/><path d="m16.8 8.078h-6.248v8.173h3.848v1.336h-3.848v1.913h6.248zm-2.404 6.251h-1.444v-4.327h1.444z"/></svg>
+               			<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m7.186 4.5h2.405v2.391h-2.405z"/><path d="m24 8.078h-6.239v8.173h3.834v1.336h-3.834v1.913h6.239zm-2.405 6.251h-1.444v-4.327h1.444z"/><path d="m7.186 8.077h2.405v8.175h-2.405z"/><path d="m6.22 4.5h-2.391v3.577h-3.829v8.175h6.22zm-2.39 9.829h-1.444v-4.327h1.444z"/><path d="m16.8 8.078h-6.248v8.173h3.848v1.336h-3.848v1.913h6.248zm-2.404 6.251h-1.444v-4.327h1.444z"/></svg>
                		</a>
                 </div>
                 
