@@ -64,7 +64,7 @@ $(document).ready(function() {
     let secondElem = $('#second');
     let daysElem = $('#days');
     
-    let endDate = new Date(2020, 6, 5, 18, 0, 0, 0).getTime();
+    let endDate = new Date(2020, 6, 30, 18, 0, 0, 0).getTime();
     
     setInterval(function () {
     
