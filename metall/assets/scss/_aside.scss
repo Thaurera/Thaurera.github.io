@@ -1,0 +1,25 @@
+.aside {
+    width: 25%;
+}
+
+.aside__inner {
+    background: #f2f2f2;
+    padding: 30px 20px 10px 30px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-size: 16px;
+        color: #111;
+        display: block;
+    }
+}
+
+.aside__content {
+    margin-top: 10px;
+}
+
+.aside__item a {
+    padding: 7px 18px;
+    color: #666;
+}
