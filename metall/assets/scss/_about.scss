@@ -1,0 +1,70 @@
+.about {
+    background: url(../img/fon-1.jpg);
+    background-size: cover;
+}
+
+.about__inner {
+    display: flex;
+    padding: 60px 0;
+    margin-right: calc(50% - 50vw + 9px);
+}
+
+.about__text {
+    width: 50%;
+
+    h2 {
+        color: #fff;
+        margin-bottom: 48px;
+    }
+
+    p {
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+}
+
+
+.about__img {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 100%;
+    }
+}
+
+.about-page {
+    background: #fff;
+    
+    .about__inner {
+        flex-direction: column;
+        color: #222;
+        padding: 0;
+    }
+    
+    h2, p {
+        color: #222;
+    }
+    
+    .about__text {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 990px) {
+    .about__img {
+        width: 100%;
+    }
+    
+    .about__text {
+        width: 100%;
+    }
+    
+    .about__inner {
+        flex-wrap: wrap;
+    }
+}
