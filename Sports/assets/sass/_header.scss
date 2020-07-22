@@ -1,0 +1,270 @@
+.header {
+	background: rgba(33, 33, 33, 0.75);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+	position: absolute;
+	width: 100%;
+}
+
+.header svg {
+    fill: #fff;
+}
+
+.header__inner {
+	display: flex;
+	height: 74px;
+    justify-content: space-between;
+}
+
+.header__left, .header__right {
+    display: flex;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	border-right: 1px solid rgba(255, 255, 255, 0.22);
+    width: 186px;
+
+	a {
+		font-size: 33px;
+		font-family: "Poppins";
+		color: rgb(245, 245, 245);
+		text-transform: uppercase;
+		line-height: 1.974;
+		padding: 0 20px;
+		height: 100%;
+		line-height: 74px;
+	}
+}
+
+.header__menu {
+	border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.header__list {
+	display: flex;
+	height: 100%;
+}
+
+.header__item {}
+
+.header__item a {
+	font-family: "Montserrat";
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.header__menu.active .header__item a {
+    padding: 10px 15px;
+}
+
+.header__social, .header__cart, .header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__social {
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+    width: 238px;
+}
+
+.header__social svg {
+    margin: 0 18px;
+}
+
+.header__search, .header__cart {
+    width: 74px;
+    height: 74px;
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+    cursor: pointer;
+}
+
+.header__cart, .header__social, .header__search-form, .header__logo, .header__burger--wrap {
+    transition: .5s;
+    overflow: hidden;
+}
+
+.active-search {
+    width: 0 !important;
+    border: 0 !important;
+}
+
+.header__search-form {
+    width: 238px;
+    overflow: hidden;
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.header__search-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.header__search-form form input {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(245, 245, 245);
+    width: 213px;
+    margin: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    padding: 5px;
+    background: transparent;
+    outline: 0;
+    padding-right: 30px;
+}
+
+.header__search-form form input::placeholder {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(245, 245, 245);
+}
+
+.header__search-form form button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: 0;
+}
+
+.header__search-form form button svg {
+    width: 30px;
+    height: 30px;
+}
+
+//********************
+//MEDIA
+//********************
+
+@media (max-width: 650px) {
+    .header__social {
+        display: none;
+    }
+}
+
+@media (max-width: 405px) {
+    .header__cart {
+        display: none;
+    }
+}
+
+@media (max-width: 336px) {
+    .header__logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    
+    .header__burger--wrap {
+        height: 100%;
+        width: 74px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgba(255, 255, 255, 0.22);
+        z-index: 1;
+    }
+    
+    .header__burger--wrap.active {
+        border-right: 0;
+    }
+    
+	body.lock {
+		overflow: hidden;
+	}
+
+	.header__burger {
+		position: relative;
+
+		width: 30px;
+		height: 20px;
+	}
+
+	.header__burger:after,
+	.header__burger:before {
+		content: '';
+		display: block;
+		position: absolute;
+
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+
+		transition: $trans;
+	}
+
+	.header__burger:after {
+		bottom: 0;
+	}
+
+	.header__burger:before {
+		top: 0;
+	}
+
+	.header__burger span {
+		position: absolute;
+		top: 9px;
+
+		width: 100%;
+		height: 2px;
+		background: #fff;
+
+		transition: $trans;
+	}
+
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header__burger.active span {
+		display: none;
+	}
+
+	.header__menu {
+		position: fixed;
+		top: 0;
+		left: 100%;
+		width: 100%;
+		height: 100%;
+		background: #6170e2;
+		padding-top: 70px;
+		overflow: auto;
+
+		transition: $trans;
+	}
+
+	.header__menu.active {
+		left: 0;
+	}
+
+	.header__list {
+		flex-direction: column;
+		align-items: flex-end;
+		margin-right: 30px;
+	}
+}

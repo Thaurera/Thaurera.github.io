@@ -1,0 +1,31 @@
+.container {
+    max-width: 1203px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: "PeaceSans";
+    font-size: 61.81px;
+    color: #494949;
+}
+
+.section-title--white {
+    color: #9f9f9f;
+}
+
+.text-description {
+    font-family: $lato;
+    font-size: 17px;
+    line-height: 30px;
+    color: #6a6a6a;
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    border: 10px solid transparent;
+    border-top: 10px solid #171717;
+}
