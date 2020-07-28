@@ -1,19 +1,7 @@
 .main-banner {
     width: 100%;
-    background: #bc2e3a;
-    position: relative;
-}
-
-.main-banner::before {
-    content: '';
-    background: url(../img/main-banner/background.png) no-repeat center;
+    background: url('../img/main-banner/background.jpg');
     background-size: cover;
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
 }
 
 .main-banner__inner {
@@ -39,6 +27,7 @@
     position: absolute;
     z-index: 100;
     background: url(../img/main-banner/front.png);
+    background-repeat: no-repeat;
     width: 830px;
     height: 899px;
     top: 11%;
